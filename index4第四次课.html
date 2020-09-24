@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 摇摆起来！！！</title>
+</head>
+
+<body bgcolor="cyan">
+    <div align="center">
+        <form>
+            <h1>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</h1>
+            <br />
+            <hr />
+            <br />
+            账号：<input type="text" name="username" value="" /><br />
+            密码：<input type="password" name="password" value="" />
+            <p>
+                &nbsp;&nbsp;&nbsp;
+                <input type="submit" value="确认">
+                &nbsp;&nbsp;&nbsp;
+                <input type="reset" value="重置">
+            </p>
+
+            <br />
+            <hr />
+        </form>
+    </div>
+
+    <div align="center">
+        <p>
+        <h1>个人资料</h1>
+        </p>
+        <br />
+        <p>姓名： <input type="text" value="陶 军 红"></p>
+        <p>
+            性别：
+            <input checked type="radio" name="sex" value="1" /><label>男</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sex" id="0" /><label>女</label>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <br />
+        </p>
+        <p>
+            爱好：
+            <input checked type="checkbox" name="love" value="music" /> 听音乐
+            <input checked type="checkbox" name="love" value="movie" /> 看电影
+            &nbsp; &nbsp; &nbsp;
+        </p>
+        <p>
+            <input checked type="checkbox" name="love" value="game" /> 玩游戏
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;
+            <input type="submit" value="确认">
+            &nbsp;&nbsp;&nbsp;
+            <input type="reset" value="重置">
+        </p>
+        <br />
+        <hr />
+
+    </div>
+
+    <div align="center">
+        <form>
+            <p>
+            <h1>详细信息</h1>
+            </p>
+            <br />
+            <p>
+                ⼿机号码：<input type="text" value="15770618138" name="phone" />
+            </p>
+            <p>
+                现在时间：<input type="date" name="date" />
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            </p>
+            <p>
+                即使时刻： <input type="time" name="time" />
+
+            </p>
+            <p>
+                <input type="datetime-local" name="datetime-local""/>
+            </p>
+            <p>
+                <input type=" month" name="month" />
+            </p>
+            <p>
+                <input type="week" name="week" />
+            </p>
+            <p>居住地址：
+                <select name="city">
+                    <option value="0">请选择</option>
+                    <option selected value="gd">广东</option>
+                    <option value="jx">江西</option>
+                </select>
+                <select name="city">
+                    <optgroup label="主要城市">
+                        <option value="1">⼴州</option>
+                        <option selected value="2">深圳</option>
+                    </optgroup>
+                    <optgroup label="其他城市">
+                        <option value="3">佛山</option>
+                        <option value="4">珠海</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <input type="button" value="普通" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="确认">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="重置">
+
+            </p>
+            <p>
+                <input type="image" name="img_btn" src="images/anniu1.png" />
+                <input type="image" name="img_btn" src="images/anniu2.png" />
+                <input type="image" name="img_btn" src="images/anniu3.png" />
+            </p>
+            <p>
+                <input type="color" name="color" />
+                &nbsp;&nbsp;&nbsp;
+                <input type="color" name="color" />
+                &nbsp;&nbsp;&nbsp;
+                <input type="color" name="color" />
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="hidden" name="uid" value="5" />
+                <input type="file" name="photo" />
+            </p>
+            <p> 电子邮箱：<input type="email" name="email" /></p>
+            <p> ⽤&nbsp;户&nbsp;名&nbsp;：<input type="text" name="username" placeholder="请输⼊⽤户名..." /></p>
+            <p>
+                <input type="search" name="search" />
+                <input type="submit" name="submit" value="搜索" />
+            </p>
+            <p>
+                <input type="url" name="url" />
+                <input type="submit" name="submit" value="提交" />
+            </p>
+            <p>
+                <input type="search" name="keywords" autocompulete="on">
+                <input type="submit" name="submit" value="搜索提交" />
+            </p>
+            <p>
+                <input type="search" name="keywords" autofocus="on" />
+                <input type="submit" name="submit" value="提交" />
+            </p>
+            <p>
+                <input type="text" name="username" required />
+                <input type="submit" name="submit" value="提交" />
+            </p>
+            <p>
+                <input list="book" placeholder="请输⼊..." />
+                <datalist id="book">
+                    <option selected value="HTML">
+                    <option value="CSS">
+                </datalist>
+            </p>
+            <p>
+                <input type="radio" name="sex" value="1" id="male" />
+                <label for="male">男</label>
+                <input type="radio" name="sex" value="0" id="female" />
+                <label for="female">⼥</label>
+            </p>
+            <p>
+                <input type="range" min="0" max="25" value="0" />
+            </p>
+            <p>
+                <textarea name="content" rows="5" cols="50" "> 个人简历：</textarea>
+            </p>
+
+
+        </form>
+
+    </div>
+
+    
+
+</body>
+
+</html>
