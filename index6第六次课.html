@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            background-color: coral;
+            height: 300px;
+            width: 200px;
+            position: absolute;
+            /* 绝对定位 */
+            left: 500px;
+            top: 200px;
+            border: 10px solid cadetblue;
+            padding: 20px;
+            margin: 5px 10px 15px 20px
+        }
+        
+        #box2 {
+            background-color: chartreuse;
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            position: absolute;
+            /* 绝对定位 */
+            left: 500px;
+            top: 200px;
+            left: 200px;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1" class="box">第二段</div>
+    <div id="box2" class="box">第一段</div>
+    <br>
+    <br>
+    <br>
+    <input type="button" id="btn1" value="请点击我">
+    <script>
+        var target = document.getElementById("btn1");
+        target.onclick = function() {
+            var leftValue = document.getElementById("box1").style.left;
+            leftValue = leftValue.replace("px", "");
+            leftValue = Number(leftValue) + 15;
+            document.getElementById("box1").style.left = leftValue + "px";
+            // document.getElementById("box2").style.left = leftValue + "px";
+
+        }
+    </script>
+
+</body>
