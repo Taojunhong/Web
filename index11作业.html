@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        @keyframes donghuayun1 {
+            0% {
+                background-color: palegreen;
+                /* transform: rotateZ(90deg); */
+            }
+            30% {
+                background-color: coral;
+                /* transform: rotateZ(180deg); */
+            }
+            60% {
+                background-color: yellow;
+                /* transform: rotateZ(270deg); */
+            }
+            100% {
+                background-color: blueviolet;
+                transform: rotateZ(360deg);
+            }
+        }
+        
+        .yun1 {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 32px;
+            font-size: 16px;
+            border-radius: 110px;
+            border: 10px solid red;
+            margin: 150px auto 80px auto;
+            background-color: palevioletred;
+        }
+        
+        .yun1:hover {
+            animation: donghuayun1 5s linear;
+        }
+        
+        #parent {
+            width: 300px;
+            height: 450px;
+            margin: 0 auto;
+            border-radius: 20px;
+            position: relative;
+            border: 2px solid peru;
+            background-color: palegreen;
+        }
+        
+        .topSon1 {
+            width: 280px;
+            height: 50px;
+            color: blue;
+            text-align: center;
+            line-height: 50px;
+            letter-spacing: 2em;
+            border: 3px dashed red;
+            border-radius: 10px;
+            position: absolute;
+            top: 10px;
+            left: 8px;
+            background-color: tomato;
+        }
+        
+        .center {
+            width: 280px;
+            height: 280px;
+            color: crimson;
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 1.5em;
+            text-shadow: 4px 4px 8px blueviolet;
+            border: 2px dashed royalblue;
+            padding-top: 20px;
+            line-height: 30px;
+            background-color: cornflowerblue;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            position: absolute;
+            word-wrap: break-word;
+            top: 80px;
+            left: 8px;
+        }
+        
+        .botSon2 {
+            width: 280px;
+            /* height: 1px; */
+            border: 1px solid red;
+            position: absolute;
+            left: 8px;
+            bottom: 50px;
+        }
+        
+        .botSon3 {
+            width: 280px;
+            height: 35px;
+            text-indent: 2em;
+            border: 1px solid red;
+            border-radius: 5px;
+            position: absolute;
+            left: 8px;
+            bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <hr />
+    <div class="yun1">
+        <br />
+        <h4>我是一个会变脸会转圈圈的小宝宝哦<br>^o^</h4>
+    </div>
+    <div id="parent">
+        <div class="topSon1">
+            <h3>我是头部</h3>
+        </div>
+        <div class="center">
+            <h5>烈火焚身五脏俱损吸星大法名不虚传</h5>
+        </div>
+        <div class="botSon2"></div>
+        <div class="botSon3">
+            <h5>CopyRight</h5>
+            <h6>版权所有 侵权必究 查的你倾家荡产^0^…………</h6>
+        </div>
+    </div>
+</body>
+
+</html>
