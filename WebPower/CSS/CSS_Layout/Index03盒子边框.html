@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>盒子边框</title>
+    <style>
+
+        /* 
+            盒子边框：
+                border-width : 
+                    1、[10px]
+                    2、[10px 20px]
+                    3、[10px 20px 30px]
+                    4、[10px 20px 30px 40px]
+
+                border-color:
+                    与 border-width 一样有4种
+
+                border-style:
+                    1、solid 实线
+                    2、dotted 圆点虚线
+                    3、dashed 虚线
+                    4、double 双实线
+        */
+        .box1 {
+            width: 120px;
+            height: 120px;
+            background-color: #1ea;
+            margin-bottom: 10px;
+        }
+
+        .s1{
+            border-width: 9px;
+            border-width: 10px 18px 27px 36px;
+            border-color: blueviolet;
+            border-color: red orange yellow green;
+            border-style: solid;
+            
+        }
+
+        .s2{
+            border-width: 9px;
+            border-width: 25px 15px 10px;
+            border-color: green;
+            border-color: red orange green;
+            border-style: dotted;
+        }
+
+        .s3{
+            border-width: 9px;
+            border-width: 8px 12px;
+            border-color:yellowgreen;
+            border-color: red green;
+            border-style: dashed;
+        }
+
+        .s4{
+            border-width: 9px;
+            border-width: 30px;
+            border-color:tomato;
+            border-color:orange;
+            border-style: double;
+        }
+
+        .s5{
+            border: 9px slateblue solid;
+            border-right: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box1 s1"></div>
+    <div class="box1 s2"></div>
+    <div class="box1 s3"></div>
+    <div class="box1 s4"></div>
+    <div class="box1 s5"></div>
+</body>
+
+</html>

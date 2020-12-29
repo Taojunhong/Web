@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型外边距</title>
+    <style>
+        /* 
+            外边距：（margin）
+                -外边距不会影响盒子可见框的大小
+                -但是外边距会影响盒子的位置
+                -一共有四个方向的外边距
+                    -margin-top
+                        -上外边距，设置一个正值，元素会向下移动
+                    -margin-tright
+                        -右外边距，设置一个正值，右边的元素会向右移动
+                    -margin-bottom
+                        -下外边距，设置一个正值，下面的元素会向下移动
+                    -margin-left
+                        -左外边距，设置一个正值，元素会向右移动
+
+                    margin: 外边距属性的简写，可以同时设置四个值，
+                            用法和border一样
+
+                margin 会影响到盒子实际的空间位置
+        */
+        .box1 {
+            width: 200px;
+            background-color: salmon;
+            border: 10px slateblue solid;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            border: 10px red solid;
+        }
+
+        .s1{
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .s2{
+            margin: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box1 s1"></div>
+    <div class="box2 s2"></div>
+</body>
+
+</html>

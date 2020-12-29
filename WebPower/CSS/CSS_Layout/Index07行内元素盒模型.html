@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素盒模型</title>
+    <style>
+        /*
+            行内元素的盒模型：
+                -行内元素不支持设置宽和高
+                -行内元素可以设置padding 
+                -行内元素可以设置border 
+                -行内元素可以设置margin
+                -但这三者只支持水平方向有效 
+            
+            display 用来设置元素的显示类型
+                可选值：
+                -inline 将元素设置为行内元素 
+                -block 将元素设置为块元素
+                -inline-block 将元素设置为行内块元素
+                table 将元素设置为一个表格
+                none 元素不在页面中显示
+
+            visibility 可选值：
+                -visible 默认值 元素正常显示
+                -hedden 将元素在页面中隐藏，不显示
+
+        */
+        .box1,.box2{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+        }
+        
+        .box1 a{
+            display: block;/* 将行内元素设置为块元素*/
+            visibility: visible;
+            width: 100px;
+            height: 100px;
+            border: 50px tomato solid;
+            background-color: chartreuse;
+        }
+
+        .box2 a{
+            display: block;/* 将行内元素设置为块元素*/
+            width: 100px;
+            height: 100px;
+            border: 50px cyan solid;
+            background-color: chartreuse;
+        }
+
+        .box2{
+           
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <a href="javascript:;">超链接</a>
+    </div>
+    <div class="box2">
+        <a href="javascript:;">超链接</a>
+    </div>
+</body>
+</html>
