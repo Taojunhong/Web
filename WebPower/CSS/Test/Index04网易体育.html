@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易体育</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: aquamarine;
+        }
+
+        .news-wrapper{
+            width: 300px;
+            height: 324px;
+            background-color: white;
+            margin: 50px auto;
+            padding: 25px 5px 15px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .news-title{
+            height: 34px;
+            border-top: 1px solid #918c8c;
+        }
+
+        .news-title a{
+            display: inline-block;
+            color: #404040;
+            font-size: 16px;
+            font-weight: bold;
+            border-top: 1.5px solid red;
+            padding: 8px 0px 6px 2px;
+            margin-top: -1px;
+        }
+
+        .news-title a:hover{
+            color: red;
+        }
+
+        .news-img{
+            height: 150px;
+        }
+
+        .news-img .img-title{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: -35px;
+            text-align: center;
+            /* padding-left: 30px; */
+            /* display: block; */
+            /* background-image: linear-gradient(linear-gradient(white, black)); */
+            /* background-color: chocolate; */
+        }
+
+        .news-img .img-title:active{
+            font-size: 20px;
+            color: aquamarine;
+        }
+
+        .news-list{
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .news-list li{
+            margin-bottom: 10px;
+            /* padding-left: 16px; */
+        }
+
+        .news-list li::before{
+            content: '■';
+            color: rgb(184, 183, 183);
+            font-size: 12px;
+            margin-right: 10px;
+        }
+
+        .news-list li a{
+            font-size: 14px;      
+            color: #666;
+           
+        }
+
+        .news-list li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 体育新闻容器 -->
+    <div class="news-wrapper">
+        <!-- 新闻标题容器 -->
+        <div class="news-title">
+            <h2> 
+                <a href="https://sports.cctv.com/" target="_blank">体育新闻</a>
+            </h2>
+        </div>
+        <!-- 新闻图片容器 -->
+        <div class="news-img">
+            <a href="https://sports.163.com/20/1230/06/FV2VRBQE00058781.html" target="_blank">
+                <img src="../Image/03-3梅西.webp" alt="梅西">
+                <h3 class="img-title">
+                    西甲-梅西休战 巴萨1-1埃瓦尔
+                </h3>
+            </a>
+        </div>
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li><a href="https://sports.163.com/20/1231/07/FV5KUHOG00059A80.html" target="_blank">百年豪门被中国老板2亿欧坑死</a></li>
+            <li><a href="https://sports.163.com/20/1231/07/FV5LF77200058782.html" target="_blank">眼看小特一年六冠 丁俊晖还不着急？</a></li>
+            <li><a href="https://sports.163.com/20/1230/07/FV32DJQT0005877U.html" target="_blank">36岁的勒布朗 不断突破认知上限的超级英雄</a></li>
+            <li><a href="https://sports.163.com/20/1229/15/FV1ASTEM00059A81.html" target="_blank">十九年前，CBA曾经有一支台湾队</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+    * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: silver;
+        }
+        
+        .sportbox {
+            width: 300px;
+            height: 324px;
+            padding-top: 27px;
+            background-color: white;
+            margin: 20px auto;
+        }
+        
+        .title {
+            border-top: 1px #dddddd solid;
+            height: 41px
+        }
+        
+        .title a {
+            display: block;
+            width: 32px;
+            height: 21px;
+            color: #404040;
+            font-weight: bold;
+            text-decoration: none;
+            border-top: 2px solid red;
+            padding: 6px 0px 10px 2px;
+            margin-top: -1px;
+        }
+        
+        .title a:hover {
+            color: red;
+        }
+        
+        img {
+            height: 150px;
+        }
+        
+        .list li {
+            height: 30px;
+            font-size: 14px;
+            line-height: 30px;
+            overflow: hidden;
+            padding-left: 15px;
+            color: skyblue;
+        }
+
+ -->
