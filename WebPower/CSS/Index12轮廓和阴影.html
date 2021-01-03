@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮廓和阴影</title>
+    <style>
+        /* 
+        轮廓和阴影：
+            设置轮廓时：
+                border: 10px solid blueviolet; 会影响元素的大小
+
+                outline: 10px solid rgb(138, 43, 226);不会影响，就像影子一样
+                         用法和border一样
+
+            设置阴影时：
+                box-shadow: 20px 20px 15px rgba(138, 43, 226,0.6);
+                第一个值：水平方向的偏移大小
+                    设置正值为阴影向右偏移
+                    设置负值为阴影向左偏移
+
+                第二个值：水平方向的偏移大小
+                    设置正值为阴影向下偏移
+                    设置负值为阴影向上偏移
+
+                第三个值：阴影的模糊范围
+
+                第四个值：阴影的颜色
+            
+            设置圆角时：
+                border-radius: 50%; 元素始终为圆形
+                border-top-left-radius: ;设置左上的圆角
+                border-top-right-radius: ;设置右上的圆角
+                border-bottom-left-radius: ;设置左下的圆角
+                border-bottom-right-radius: ;设置右下的圆角
+        */
+
+
+        .box1,.box2,.box3,.box4{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+        }
+
+        .s1{
+            border: 10px solid blueviolet;
+        }
+
+        .s2{
+            outline: 10px solid blueviolet;
+        }
+
+        .s3{
+            margin-top: 20px;
+            box-shadow: 20px 20px 15px rgba(138, 43, 226,0.6);
+        }
+
+        .s4{
+            border-radius: 50%;
+            border-top-left-radius: 40px 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 s1"></div>
+    <span>轮廓和阴影: border影响元素大小</span><br>
+    <span>轮廓和阴影: outline没有影响元素大小</span>
+    <div class="box2 s2"></div>
+    <span>轮廓和阴影: outline没有影响元素大小</span>
+    <div class="box3 s3"></div><br>
+    <div class="box4 s4"></div><br>
+</body>
+</html>

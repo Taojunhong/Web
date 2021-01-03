@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子的尺寸</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            background-color: aqua;
+            border: 10px solid red;
+            margin-bottom: 10px;
+        }
+
+        .s1{
+            box-sizing: content-box;
+        }
+
+        .s2{
+            box-sizing: border-box;
+        }
+
+        /* 
+            默认情况下，width 和 height 设置的是内容区的大小
+            box-sizing:content-box; 默认值，宽度和高度设置内容区的大小
+            box-sizing：border-box; 设置包括盒子边框的大小。
+        */
+    </style>
+</head>
+<body>
+    <div class="box s1"></div>
+    <div class="box s2"></div>
+</body>
+</html>
