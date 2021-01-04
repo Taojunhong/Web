@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <style>
+        div{
+            font-size: 50px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+            float: left;/*左侧浮动*/
+        }
+
+        .box2{
+            width: 300px;
+            height: 400px;
+            background-color: violet;
+            float: left;/*左侧浮动*/
+            clear: left;/*清除左侧浮动*/
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;
+            clear: both;/*清除两侧浮动*/
+        }
+        /* 
+        清除浮动：
+            clear
+                可选值：
+                    left;清除左侧浮动
+                    right;清除右侧浮动
+                    both;清除两侧浮动
+
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

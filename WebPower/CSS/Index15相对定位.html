@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <style>
+        /* 
+            定位（position)
+                -通过定位将元素摆放的页面任意位置
+                -使用position属性来设置定位
+                -可选值：
+                    static 默认值 没有开启定位
+                    relative 开启相对定位
+                    absolute 开启绝对定位
+                    fixed   开启元素的固定定位
+                    sticky  开启元素的粘滞定位
+
+                -特点：开启定位后，不设置偏移量元素不会发生任何的变化
+
+                -偏移量：
+                    top 元素与定位位置上边的距离
+                    bottom 元素与定位位置下边的距离
+                    left 元素与定位位置左边的距离
+                    right 元素与定位位置右边的距离
+        */
+        div{
+            font-size: 50px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+        }
+
+        /* 
+            相对定位：
+                -当元素的属性值设置为relative时则开启了元素的相对定位
+                -相对定位的特点：
+                    -1、元素开启相对定位以后，如果不设置偏移量元素不会发生任何变化
+                    -2、相对定位是参照元素在文档流中的位置进行定位的
+                    -3、相对定位会提升元素的层级
+                    -4、相对定位不会使元素脱离文档流
+                    -5、相对定位不会改变元素的性质
+        */
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: springgreen;
+            position: relative;
+            top: -200px;
+            left: 400px;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+        }
+
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            position: relative;
+            top: -200px;
+            left: 400px;
+        }
+
+        .box5{
+            width: 220px;
+            height: 220px;
+            background-color: gold;
+            position: relative;
+            top: -610px;
+            left: 190px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+</body>
+</html>

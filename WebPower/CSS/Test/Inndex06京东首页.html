@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东首页</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        /* 设置最顶部图片区域 */
+        .tp {
+            width: 100%;
+            height: 80px;
+            background-color: #1D591E;
+            margin: 0 auto;
+        }
+
+        /* 设置图片内边距 */
+        .tp img {
+            margin: 0 168px;
+        }
+
+        /* 设置导航条宽高和背景 */
+        .nav {
+            height: 30px;
+            width: 100%;
+            background-color: #E3E4E5;
+            overflow: hidden;
+        }
+
+        /* 设置浮动 */
+        .nav li {
+            float: right;
+            list-style: none;
+        }
+
+        /* 设置导航项之间的分隔符 */
+        .nav .s1 {
+            padding: 0 5px;
+            color: #CECECF;
+            font-size: 12px;
+        }
+
+        /* 设置超链接样式 */
+        .nav a {
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 30px;
+            color: #9F9FA0;
+            padding: 0 12px;
+        }
+
+        /* 设置鼠标悬停效果 */
+        .nav a:hover {
+            color: red;
+        }
+        
+        .nav li:first-child a {
+            margin-right: 170px;
+        }
+        
+        .nav li:last-child a {
+            padding-right: 1px;
+        }
+        
+        .nav li:nth-child(4) a {
+            color: red;
+        }
+        
+        .nav li:nth-child(8) a {
+            padding: 0 3px;
+            color: red;
+        }
+
+        /* 设置头部 */
+        .header {
+            width: 100%;
+            height: 140px;
+            /* background-color: rgb(221, 154, 154); */
+            /* margin: 0 auto; */
+        }
+
+        .header .box1{
+            width: 1190px;
+            height: 100%;
+            background-color: tomato;
+            margin: 0 auto;
+        }
+
+        /* 设置主体 */
+        .main {
+            width: 1190px;
+            height: 480px;
+            /* background-color: palevioletred; */
+            /* background-image: url(../Image/京东主体背景图.webp);
+            background-size: 1500px 430px;
+            background-repeat: no-repeat; */
+            margin: 10px auto 30px;
+        }
+
+        .main .centent{
+            width: 1190px;
+            height: 470px;
+            margin: 10px auto 0;
+            background-color: cyan;
+        }
+
+        /* 设置尾部 */
+        .footer {
+            width: 1190;
+            height: 260px;
+            /* background-color: rgb(36, 116, 89); */
+            /* margin: 0 auto; */
+        }
+
+        .footer .box2{
+            width: 1190px;
+            height: 100%;
+            background-color: cornflowerblue;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="tp">
+            <img src="../Image/京东顶部图.webp" alt="京东顶部图">
+        </div>
+        <ul class="nav">
+            <li class="s1">
+                <span class="s1">|</span><a href="">手机京东</a>
+            </li>
+            <li>
+                <span class="s1">|</span><a href="">网站导航</a>
+            </li>
+            <li>
+                <span class="s1">|</span><a href="">客户服务</a>
+            </li>
+            <li>
+                <span class="s1">|</span><a href="">企业采购</a>
+            </li>
+            <li>
+                <span class="s1">|</span><a href="">京东会员</a>
+            </li>
+            <li>
+                <span class="s1">|</span><a href="">我的京东</a>
+            </li>
+            <li>
+                <span class="s1">|</span><a href="">我的订单</a>
+            </li>
+            <li>
+                <a href="">免费注册</a>
+            </li>
+            <li>
+                <a href="">你好，请登录</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header">
+        <div class="box1"></div>
+    </div>
+    <div class="main">
+        <div class="centent">
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>
