@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+         /* 
+            伪元素：表示页面中一些特殊的并不真实存在的元素 
+                ：：first-letter 表示开头第一个字母
+                ：：first-line 表示第一行
+                ：：selection 表示鼠标选中的内容
+                ：：before 表示元素的开头
+                ：：after 表示元素的最后
+                    -before 和 after 必须结合content属性来使用
+        */
+        
+        p::first-letter {
+            color: blue;
+            font-size: 40px;
+        }
+        
+        p:not(:nth-of-type(2))::first-line {
+            background-color: yellowgreen;
+        }
+        
+        p::selection {
+            background-color: pink;
+        }
+        
+        p.pink {
+            background-color: pink;
+        }
+        
+        div.pp::before {
+            content: '『';
+            color: red;
+        
+        }
+        div.pp::after {
+            content: '』';
+            color: red;
+        }
+
+        li{
+            font-size: 15px;
+            line-height: 30px;
+            margin-bottom: 8px;
+        }
+
+        li:nth-child(2n+1){
+            background-color: aqua;
+        }
+
+        li:nth-child(2n){
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>《云边有个小bai卖部》佳句赏du析</h2>
+        <ul>
+            <li>有朵盛开的云，缓缓滑过bai山顶，随风飘向天du边zhi，我们慢慢明白，有些告dao别，就是最后一面。</li>
+            <li>山风微微，像月光下晃动的海浪，温和而柔软，停留在时光的背后，变成小时候听过的故事。在遥远的城市，陌生的地方，有他未曾见过的山和海。</li>
+            <li>人和人之间舒服的关系，是可以一直不说话，也可以随时说话。</li>
+            <li>生命是有光的。在我熄灭以前，能够照亮你一点，就是我所有能做的了。我爱你，你要记得我。</li>
+            <li>有些人刻苦铭心，没几年会遗忘。有些人不论生死，都陪在身旁。</li>
+            <li>希望和悲伤，都是一缕光。总有一天，我们会再相遇。</li>
+        </ul>
+    </div>
+
+    <div class="pp">哪里有天才，我是把别人喝咖啡的工夫都用在了工作上了。</div>
+    <div class="pp">愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者的话。</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ab animi, eum quibusdam nemo, porro veniam optio nostrum voluptatem consequatur voluptatum itaque asperiores aliquid! Minus, recusandae. Magnam rerum unde similique.</p>
+
+    <p class="pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ab animi, eum quibusdam nemo, porro veniam optio nostrum voluptatem consequatur voluptatum itaque asperiores aliquid! Minus, recusandae. Magnam rerum unde similique.</p>
+
+</body>
+
+</html>
