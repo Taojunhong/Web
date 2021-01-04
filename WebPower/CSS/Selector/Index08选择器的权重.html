@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器的权重</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+            color:palevioletred;
+            background-color:  chartreuse;
+        }
+
+        .color{
+            color:  blueviolet;
+            background-color:turquoise;
+        }
+
+        #color{
+            color: purple;
+            background-color: skyblue;
+        }
+
+        .box{
+            color: orchid;
+            background-color: rosybrown;
+        }
+
+        div#color{
+            color: black;
+            background-color: rgb(176, 101, 247);
+        }
+
+        /* 
+            样式的冲突
+                -当不同的选择器选中相同的元素，并为相同的样式设置不同的值时
+                 就发生了样式的冲突
+
+            发生样式的冲突时，应用哪个样式由选择器的权重（优先级）来决定
+
+            选择器的权重：从上大下排序
+                内联样式
+                id选择器
+                类和伪类选择器
+                元素选择器
+                通配选择权
+                继承的样式
+
+            比较优先级时，将所有的选择器的优先级进行相加计算，最后优先级越高，则越优先显示。
+                选择器的累加不会超过其最大的数量级，类选择器再高也不会超过id选择器
+                如果优先级相同，则优先使用代码下面的样式
+
+        */
+    </style>
+</head>
+<body>
+    <div class="color">
+        春眠不觉晓，<br><br>
+        处处闻啼鸟。<br><br>
+        夜来风雨声, <br><br>
+        花落知多少。<br><br>
+    </div>
+
+    <div id="color" class="box">
+        春眠不觉晓，<br><br>
+        处处闻啼鸟。<br><br>
+        夜来风雨声, <br><br>
+        花落知多少。<br><br>
+    </div>
+</body>
+</html>
