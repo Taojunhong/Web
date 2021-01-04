@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单位</title>
+    <style>
+        /*
+            长度单位：
+                像素 ：px
+                    -不同屏幕的像素大小是不同的，像素越小的屏幕显示的效果越清晰
+
+                百分比: 50%
+                    -百分比是相对于其父元素属性的百分比
+                    -设置百分比可以使子元素跟随父元素的改变而改变
+                
+                em
+                    -em是相对于元素的字体大小来计算的
+                    -1em = 1fant-size = 1*16px
+                    -em会根据字体的大小的改变而改变
+                
+                rem
+                    -rem是相对于根元素html的字体大小来计算的
+                     -1rem = 1fant-size = 1*16px
+        */
+        .box1 {
+            font-size: 16px;
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            margin-bottom: 5px;
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+        }
+
+        .box3 {
+            width: 50%;
+            height: 50%;
+            background-color: darkmagenta;
+        }
+
+        .box4{
+            width: 10em;/* 10em=160px*/
+            height: 10em;
+            background-color: chartreuse;
+        }
+
+        html{
+            font-size: 16px;
+        }
+
+        .box5{
+            width: 10rem;
+            height: 10rem;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <div class="box1">
+        <div class="box3"></div>
+    </div>
+
+    <div class="box1">
+        <div class="box4"></div>
+    </div>
+
+    <div class="box1">
+        <div class="box5"></div>
+    </div>
+</body>
+
+</html>
