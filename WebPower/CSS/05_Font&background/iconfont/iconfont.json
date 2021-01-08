@@ -1,0 +1,79 @@
+{
+  "id": "2310922",
+  "name": "WebPower",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1489504",
+      "name": "美女",
+      "font_class": "meinv",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "2057444",
+      "name": "美女",
+      "font_class": "meinv1",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "6804606",
+      "name": "动物系列",
+      "font_class": "Chicken",
+      "unicode": "e8dd",
+      "unicode_decimal": 59613
+    },
+    {
+      "icon_id": "7237878",
+      "name": "动物",
+      "font_class": "dongwu",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "13281479",
+      "name": "动物脚印",
+      "font_class": "dongwujiaoyin",
+      "unicode": "e7a6",
+      "unicode_decimal": 59302
+    },
+    {
+      "icon_id": "13993892",
+      "name": "动物",
+      "font_class": "dongwu1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "15170270",
+      "name": "动物",
+      "font_class": "dongwu2",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "15926170",
+      "name": "动物",
+      "font_class": "dongwu3",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    },
+    {
+      "icon_id": "16472243",
+      "name": "动物乐园",
+      "font_class": "dongwuleyuan",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "18003026",
+      "name": "动物-狗狗",
+      "font_class": "dongwu-gougou",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}
