@@ -1,0 +1,22 @@
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body{
+    /* color: #333; */
+    min-width: 1226px;
+    overflow: scroll;
+    font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;;
+}
+
+.w{
+    width: 1226px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}

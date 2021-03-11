@@ -1,0 +1,275 @@
+/* 设置最外部容器样式 */
+.top-bar-wrapper{
+    width: 100%;
+    background-color: #333;
+}
+
+/* 设置内部容器样式 */
+.top-bar{
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+/* 设置导航条左侧服务列表样式 */
+.top-bar .service{
+    float: left;
+}
+
+/* 设置导航条右侧用户信息样式 */
+.top-bar .user-info{
+    float: right;
+}
+
+/* 设置购物车样式 */
+.top-bar .shop-cart{
+    text-align: center;
+    float: right;
+    width: 120px;
+    height: 40px;
+    margin-left: 25px;
+    background-color: #424242;
+}
+
+/* 设置购物车图标样式 */
+.shop-cart span{
+    margin-right: 7px;
+    font-size: 13px;
+}
+
+/* 设置li样式 */
+.top-bar li{
+    float: left;
+}
+
+/* 设置超链接样式 */
+.top-bar a{
+    display: block;
+    font-size: 12px;
+    color: #b0b0b0;
+    padding-top: 1px;
+}
+
+/* 设置超链接移入样式 */
+.top-bar a:hover{
+    color: #fff;
+}
+
+/* 设置分隔符样式 */
+.top-bar .line{
+    font-size: 12px;
+    margin: 0 7px;
+    color: #424242;
+}
+
+/* 设置购物车移入效果 */
+.shop-cart:hover a{
+    background-color: #fff;
+    color: #ff6700;
+}
+
+/* 设置下拉框的浮动 */
+.app{
+    position: relative;
+}
+
+/* 设置下拉框的小三角 */
+.app::before{
+    display: none;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: 10px solid red ;
+    border-top: none;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* 设置下拉框 */
+.app .qrcode{
+    /* display: none; */
+    width: 124px;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    line-height: 1;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.3);
+    position: absolute;
+    left: -40px;
+    z-index: 50;
+    /* 为样式设置过渡效果 */
+    transition: height .3s;
+}
+
+/* 设置二维码居中 */
+.app .qrcode img{
+    width: 90px;
+    margin: 17px 17PX 14px;
+}
+
+/* 设置二维码下的字体 */
+.app .qrcode span{
+    font-size: 14px;
+    color: #000;
+}
+
+/* 设置移入移出效果 */
+.app:hover::before,
+.app:hover .qrcode{
+    display: block;
+    height: 148px;
+}
+
+/* 设置头部 */
+.header-wrapper{
+    /* width: 100%; */
+    position: relative;
+    z-index: 40;
+}
+
+.header{
+   height: 100px;
+   /* position: relative; */
+   /* line-height: 100px; */
+    /* background-color: rgb(217, 255, 208); */
+}
+
+/* 设置logo */
+.header .logo{
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin-top: 21px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 设置超链接样式 */
+.header .logo a{
+    width: 55px;
+    height: 55px;
+    left: 0;
+    background-color: #ff6700;
+    transition: left .2s;
+}
+
+/* 设置超链接内的图标样式 */
+.header .logo .mi{
+    position: absolute;
+    background-image: url(../Fm/logo.png);
+}
+
+.header .logo .home{
+    position: absolute;
+    left: -55px;
+    background-image: url(../Fm/home.png);
+}
+
+/* 设置logo移入移出效果 */
+.header .logo:hover .mi{
+    left: 55px;
+}
+
+.header .logo:hover .home{
+    left: 0px;
+}
+
+/* 设置头部导航调样式 */
+.header .nav-wrapper{
+    width: 850px;
+    margin-top: -1px;
+    margin-left: 7px;
+    float: left;
+    /* background-color: #dfd; */
+}
+
+.header .nav-wrapper li{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header .nav-wrapper li:first-child{
+    padding: 0;
+    margin-left: 61px;
+    margin-right: 15px;
+}
+
+.header .nav-wrapper a{
+    line-height: 100px;
+    color: #333;
+    font-size: 16px;
+    z-index: -1;
+}
+
+/* 设置hover效果 */
+.header .nav-wrapper li:hover a{
+    color: #FF4A00;
+}
+
+.header-wrapper .nav-info{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #fff;
+    border-top: 1px solid rgb(224,224,224);
+    /* 设置过渡效果 */
+    transition: height 0.3s;
+}  
+
+.nav-info img{
+    width: 205px;
+    height: 230px;
+    /* margin: 0 5px; */
+}
+
+.nav-info .box{
+    width: 1255px;
+    margin: 0 auto;
+}
+
+/* 设置下拉框样式 */
+.nav-wrapper .nav-list:hover ~ .nav-info,
+.nav-info:hover{
+    height: 230px;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.2);
+   
+}
+
+/* 设置搜索框样式 */
+.search-box .search-inp,
+.search-box .search-btn{
+   
+    border: 1px solid rgb(224,224,224);
+    background-color: #ffffff;
+    line-height: 100xp;
+    margin-top: 25px;
+    float: right;
+}
+
+.search-box .search-btn{
+    width: 52px;
+    height: 52px;  
+}
+
+
+.search-box .search-inp{
+    width: 244px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
