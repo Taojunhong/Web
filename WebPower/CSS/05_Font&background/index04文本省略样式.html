@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本样式</title>
+    <style>
+        .box{
+            width: 200px;
+            white-space: nowrap;
+            /*
+            white-space
+            设置网页如何处理空白
+            可选值：
+                normal 正常
+                nowrap 不换行
+                pre 保留空白
+            */
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* text-overflow 设置省略*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis sunt sequi beatae vitae minus consectetur maiores odit doloremque voluptatem animi laborum, fugit voluptatibus commodi veritatis. Ipsam architecto ipsa deserunt.
+    </div>
+</body>
+</html>
