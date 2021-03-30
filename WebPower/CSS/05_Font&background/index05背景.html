@@ -10,13 +10,13 @@
             width: 500px;
             height: 500px;
             background-color: rgb(107, 232, 190);
-            background-image: url("./Image/05/1.jpg");
+            background-image: url("../../IMG/animal/1.jpg");
             background-repeat:repeat-x;
             background-clip: content-box;
             background-origin: border-box;
             background-position: center;
             padding: 10px;
-            border: 5px solid darkorange;
+            border: 5px double darkorange;
             overflow: auto;
             background-size:100px 100px;
             /* 
@@ -28,10 +28,11 @@
                         content-box 背景只会出现在内容区
 
                 background-origin：
+                    背景图片偏移量计算的原点
                     可选值：
                         padding-box 默认值， background-position从内边距处开始计算
                         content-box背景图片的偏移量从内容区处计算
-                        border-box 背景图片的变量从边框处开始计算
+                        border-box 背景图片的偏移量从边框处开始计算
                 
                 background-size:设置背景图片的大小
                     可选值：
@@ -59,9 +60,9 @@
 
         .box2{
             height: 1000px;
-            background-image: url(./Image/05/2.jpg);
+            background-image: url(../../IMG/animal/2.jpg);
             background-repeat: no-repeat;
-            background-size: 150px 150px;
+            background-size: 120px 120px;
             background-position: center;
             
         }
@@ -70,9 +71,7 @@
 
 <body>
     <div class="box1">
-        <div class="box2">
-
-        </div>
+        <div class="box2"></div>
     </div>
 </body>
 

@@ -12,7 +12,18 @@
     </style>
 </head>
 <body>
-    <form action="Index04target提交.html">
+    <!-- 
+        表单:
+            -在现实生活中表单用于提交数据
+            -在网页中也可以使用表单，网页中的表单用于将本地的数据提交给远程的服务器
+            -使用form标签来创建一个表单
+
+        单选按钮:
+            -像这种选择框，必须要指定一个value属性，value属性最终会作为用户的填写的值
+            -checked 可以将单选按钮设置为默认选中
+
+     -->
+    <form action="target提交.html">
         文本框 <input type="text" name="username">
         <br><br>
         密码框 <input type="password" name="password">
@@ -24,7 +35,7 @@
         <input type="checkbox" name="test" value="movie">电影
         <input type="checkbox" name="test" value="sport">运动
         <br><br>
-        下拉列表 <select name="muchChange" >
+        下拉列表 <select name="selectValues" >
             <option value="1">选项一</option>
             <option value="2">选项二</option>
             <option value="3">选项三</option>
