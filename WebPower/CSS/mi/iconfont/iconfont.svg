@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="gouwuche" unicode="&#58930;" d="M275.939 108.651h789.203a37.77 37.77 0 0 1 35.24 35.157s54.126 301.146 78.828 508.459c7.082 57.413-19.98 85.488-72.926 85.488h-862.13L229.992 860.844A36.674 36.674 0 0 1 197.027 896H38.276a39.877 39.877 0 0 1 0-79.67h123.51l80.008-672.69a35.915 35.915 0 0 1 33.723-34.989z m826.804 550.613c-21.33-166.339-56.486-388.995-70.565-472.122H309.999l-56.486 472.122h849.23zM314.72 28.981a78.49 78.49 0 1 1 78.828-78.49 78.49 78.49 0 0 1-78.828 78.49z m711.556 0a78.49 78.49 0 1 1 78.828-78.49 78.49 78.49 0 0 1-78.828 78.49z"  horiz-adv-x="1180" />
+
+    
+
+
+  </font>
+</defs></svg>
