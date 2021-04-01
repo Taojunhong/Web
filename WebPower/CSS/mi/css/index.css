@@ -9,34 +9,31 @@
 }
 
 .service-wrapper{
-    line-height: 42px;
+    line-height: 40px;
+    padding-top: 1px;
 }
 
 /* 设置超链接的样式 */
 .top-wrapper a {
     height: 40px;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 12px;
     color: #b0b0b0;
     display: block;
 }
 
 /* 设置左侧导航栏 */
-.top-wrapper .service-wrapper,
+.service-wrapper,
 .top-wrapper li {
     float: left;
 }
 
 /* 设置右侧导航栏 */
-.h{
-    line-height: 40px;
-}
-
 .shop-cart,
 .user-info {
     float: right;
+    line-height: 40px;
 }
-
 
 /* 设置左侧分割线样式 */
 .top-wrapper .line {
@@ -45,21 +42,23 @@
     margin: 0 7px;
 }
 
-
 /* 设置右侧间隔样式 */
 .user-info a{
     padding: 0 5px;
+    color: #b0b0b0;
 }
 
-.user-info .info-space{
-    padding: 0 10px;
-    margin-right: 15px;
-}
-
+/* 设置右侧间隔样式 */
 .user-info span{
     display: block;
     width: 3.24px;
     color: #424242;
+}
+
+/* 设置右侧间隔样式 */
+.user-info .info-space{
+    padding: 0 10px;
+    margin-right: 15px;
 }
 
 /* 设置购物车样式 */
@@ -67,10 +66,114 @@
     width: 120px;
     height: 40px;
     text-align: center;
+    color: #b0b0b0;
     background-color: #424242;
 }
 
+/* 设置购物车样式 */
 .shop-cart i{
     font-size: 16px;
     margin-right: 2px;
+}
+
+/* 设置超链接hover效果 */
+.top-wrapper a:hover{
+    color: white;
+}
+
+/* 设置购物车hover效果 */
+.shop-cart:hover a{
+    background-color: #fff;
+    color: #ff6700;
+}
+
+/* 设置下拉框小三角样式 */
+.app::after{
+    display: none;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* 设置二维码的样式 */
+.app{
+    position: relative;
+    text-align: center;
+    z-index: 100;
+}
+
+/* 设置二维码的大小 */
+.app .qrcode{
+    width: 124px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: -33px;
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+    transition: height .3s;
+}
+
+/* 设置二维码的大小 */
+.app img{
+    width: 90px;
+    margin: 17px;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+/* 设置二维码文字样式 */
+.app span{
+    line-height: 1;
+    font-size: 14px;
+    color:#333;
+}
+
+/* 设置二维码下拉的hover效果 */
+.app:hover .qrcode{
+    height: 148px;
+}
+
+/* 设置小三角的hover效果 */
+.app:hover::after{
+    display: block;
+}
+
+/* 设置购物车下拉框 */
+.shop-cart{
+    position: relative;
+}
+.shop-cart .cart-box{
+    width: 316px;
+    height: 100px;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0,0,0,.3);
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    text-align: center;
+    line-height: 99px; 
+    transition: height .3s;
+    /* display: table; */
+}
+
+/* 
+    为下拉框中的文字设置居中 
+    不知道为什么会有bug
+*/
+/* .cart-box span{
+    display: table-cell; 
+    vertical-align: middle;
+} */
+
+/* 设置购物车下拉框的hover效果 */
+.shop-cart:hover .cart-box{
+    height: 100px;
 }

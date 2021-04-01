@@ -42,7 +42,15 @@
                 <li class="line">|</li>
                 <li><a href="javascript:;">协议规则</a></li>
                 <li class="line">|</li>
-                <li><a href="javascript:;">下载app</a></li>
+                <li >
+                    <a class="app" href="javascript:;">
+                        下载app
+                        <div class="qrcode">
+                            <img src="./img/qrcode.png">
+                            <span>小米商城APP</span>
+                        </div>
+                    </a>
+                </li>
                 <li class="line">|</li>
                 <li><a href="javascript:;">智能生活</a></li>
                 <li class="line">|</li>
@@ -51,15 +59,20 @@
             </ul>
 
             <!-- 创建右侧的购物车导航条 -->
-            <ul class="shop-cart h">
-                <li><a href="javascript:;">
+            <ul class="shop-cart">
+                <li>
+                    <a href="javascript:;">
                     <i class="fa fa-shopping-cart"></i>
                     购物车（0）
-                </a></li>
+                    </a>
+                    <div class="cart-box">
+                       <span>购物车中还没有商品，赶紧选购吧！</span>
+                    </div>
+                </li>
             </ul>
 
             <!-- 创建右侧的信息导航条 -->
-            <ul class="user-info h">
+            <ul class="user-info">
                 <li><a href="javascript:;">登录</a></li>
                 <li><span>|</span></li>
                 <li><a href="javascript:;">注册</a></li>

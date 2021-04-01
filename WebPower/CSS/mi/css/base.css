@@ -1,7 +1,7 @@
 /* 公共的样式 */
 
 body {
-    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, f, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
     color: #333;
     min-width: 1226px;
     overflow: scroll;
