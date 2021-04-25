@@ -105,8 +105,8 @@
 /* 设置二维码的样式 */
 .app{
     position: relative;
-    text-align: center;
     z-index: 100;
+    text-align: center;
 }
 
 /* 设置二维码的大小 */
@@ -118,6 +118,7 @@
     left: -33px;
     box-shadow: 0 0 6px rgba(0,0,0,.3);
     transition: height .3s;
+    background-color: #fff;
 }
 
 /* 设置二维码的大小 */
@@ -148,6 +149,7 @@
 /* 设置购物车下拉框 */
 .shop-cart{
     position: relative;
+    z-index: 30;
 }
 .shop-cart .cart-box{
     width: 316px;
@@ -155,25 +157,352 @@
     height: 0;
     overflow: hidden;
     box-shadow: 0 4px 4px rgba(0,0,0,.3);
+    background-color: #fff;
     position: absolute;
     right: 0;
     font-size: 12px;
     text-align: center;
     line-height: 99px; 
     transition: height .3s;
-    /* display: table; */
 }
-
-/* 
-    为下拉框中的文字设置居中 
-    不知道为什么会有bug
-*/
-/* .cart-box span{
-    display: table-cell; 
-    vertical-align: middle;
-} */
 
 /* 设置购物车下拉框的hover效果 */
 .shop-cart:hover .cart-box{
     height: 100px;
+}
+
+/* 设置头部导航条 */
+.header-wrapper{
+    position: relative;
+   
+}
+
+/* 设置产品导航条 */
+.nav-wrapper{
+    height: 100px;
+    padding-top: 1px;
+    /* background-color: rgb(200, 250, 245); */
+}
+
+/* 设置logo样式 */
+.nav-wrapper .logo{
+    float: left;
+    width: 56px;
+    height: 56px;
+    background-size: 56px 56px;
+    background-image: url(../img/mi-logo1.png);
+    margin-top: 21px;
+    border-radius: 20px;
+}
+
+/* 设置超链接样式 */
+.logo a{
+    width: 56px;
+    height: 56px;
+    display: block;
+}
+
+/* 设置产品导航条样式 */
+
+
+/* 设置导航条服务 */
+.pro-wrapper .pro-serve{
+    float: left;
+    height: 88px;
+    width: 760px;
+    padding-top: 11px;
+    padding-left: 37px;
+    font-size: 16px;
+}
+
+.pro-wrapper > ul > li,
+.img-box > .nav-box >li {
+    float: left;
+}
+
+/* 设置第一个超链接样式 */
+.pro-serve > li:first-child > a{
+    display: inline-block;
+    padding: 26px 0px 38px;
+    padding-left: 30px;
+    margin-right: 15px; 
+    visibility: hidden;
+}
+.linkst{
+    position: relative;
+}
+/* 设置左侧导航栏 */
+.list-menu{
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 234px;
+    height: 420px;
+    padding: 20px 0;
+    line-height: 1;
+}
+
+.list-menu a{
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.list-menu a i{
+    float: right;
+    line-height: 42px;
+    font-size: 14px;
+    padding-right: 23px;
+}
+
+ul .list-menu a:hover{
+    background-color: #FF6700;
+}
+
+/* 设置超链接样式 */
+.pro-serve > li >a{
+    color: #333;
+}
+
+/* 设置超链接间距样式 */
+.pro-serve > li > a{
+    display: block;
+    padding: 26px 10px 38px;
+}
+
+/* 设置超链接hover效果 */
+.pro-serve > li >a:hover{
+    color: #FF6700;
+}
+
+/* 设置产品下拉框样式 */
+.nav-info{
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 100px;
+    left: 0;
+    transition: height .4s;
+    background-color: #fff;
+}
+
+/* 设置宽度样式 */
+.img-box{
+    width: 1225px;
+    min-width: 1225px;
+    padding-left: 1px;
+    height: 228px; 
+    margin: 0 auto;
+}
+
+/* 设置产品样式 */
+.nav-box li{
+    width: 180px;
+    text-align: center;
+    padding: 0px 11.5px 0 11.5px;
+    margin-top: 35px;
+    border-right: 1px solid rgb(224, 224, 224);
+}
+
+/* 清除最后一个边框 */
+.nav-box li:last-child{
+    border-right: none;
+}
+
+/* 添加hover效果 */
+.linksty:hover ~ .nav-info,
+.nav-info:hover{
+    border-top: 1px solid rgb(224, 224, 224);
+    height: 228px;  
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+
+/* 设置字体样式 */
+.nav-box span{
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.colorstyle{
+    color: #ff6700;
+}
+
+.nav-box img{
+    padding-bottom: 16px;
+}
+
+/* 设置右侧的搜索框 */
+.search-wrapper{
+    float: right;
+    margin-top: 24px;
+}
+
+.search-inp{
+    float: left;
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid rgb(224, 224, 224);
+    outline: none;
+    border-right: none;
+}
+
+.search-btn{
+    float: left;
+    font-size: 17px;
+    background-color: #fff;
+    width: 38px;
+    height: 46px;
+    padding: 1px 6px;
+    border: 1px solid rgb(224, 224, 224);
+    box-sizing: content-box;
+}
+
+.search-inp:focus,
+.search-inp:focus +.search-btn{
+    border-color: #FF6700;
+}
+
+.search-btn:hover{
+    background-color: #FF6700;
+    border-color: #FF6700;
+    color: #fff;
+}
+
+/* 设置中部轮播图 */
+.banner{
+    position: relative;
+    height: 460px;
+    margin-top: -1px;
+}
+
+.banner .img-list li{
+    position: absolute;
+}
+
+.banner img{
+    width: 100%;
+    vertical-align: top;
+}
+
+/* 设置导航点 */
+.point{
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+}
+.point a{
+    display: block;
+    float: left;
+    width: 7px;
+    height: 7px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 6px;
+}
+
+/* 设置hover效果 */
+.point a:hover,
+.point a.active{
+    border: 2px solid #969696;
+    background-color: #DAD7D4;
+}
+
+/* 设置左右箭头 */
+.prev,.next{
+    display: block;
+    width: 40px;
+    height: 70px;
+    font-size: 40px;
+    color: #969696;
+    /* background-color: cadetblue; */
+    line-height:70px;
+    text-align:center;
+}
+
+.prev:hover,
+.next:hover{
+    background-color: #7B7B7B;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.prev{
+    position: absolute;
+    left: 234px;
+    bottom:193px;  
+}
+
+.next{
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 193px;
+}
+
+/* 设置尾部样式 */
+.ads{
+    margin-top: 15px;
+}
+.ads .sixs{
+    width: 228px;
+    height: 164px;
+    padding: 3px;
+    margin-right: 14px;
+    background-color: #5F5750;
+}
+
+/* .ads .sixs li{
+    width: 75px;
+    height: 84px;
+    text-align: center;
+    padding-top: 18px;
+    overflow: hidden;
+} */
+
+.sixs i{
+    display: block;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.sixs a{
+    display: block;
+    color: #c3bfbd;
+    font-size: 12px;
+    width: 75px;
+    height: 84px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ads .imgs a{
+    display: block;
+    width: 316px;
+    height: 170px;
+}
+
+.ads .imgs img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 设置间距 */
+.ads .imgs li:nth-child(2){
+    margin: 0 15px;
+}
+
+.ads .sixs,
+.ads .three-img,
+.ads li{
+    float: left;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +15,15 @@
     <link rel="stylesheet" href="./iconfont/iconfont.css">
     <!-- 引入当前页面的样式表 -->
     <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入网站图标 -->
+    <link rel="icon" href="./favicon.ico">
 </head>
-<body>
+
+<body style="height: 1000px;">
     <!-- 创建外部容器rq -->
     <div class="rq">
         <!-- 创建顶部导航条 -->
-        <div class="top-wrapper mcw">
+        <div class="top-wrapper mcw clearfix">
             <!-- 创建左侧的服务导航条 -->
             <ul class="service-wrapper">
                 <li><a href="javascript:;">小米商城</a></li>
@@ -42,7 +46,7 @@
                 <li class="line">|</li>
                 <li><a href="javascript:;">协议规则</a></li>
                 <li class="line">|</li>
-                <li >
+                <li>
                     <a class="app" href="javascript:;">
                         下载app
                         <div class="qrcode">
@@ -55,31 +59,240 @@
                 <li><a href="javascript:;">智能生活</a></li>
                 <li class="line">|</li>
                 <li><a href="javascript:;">Select Location</a></li>
-                <li class="line">|</li>
             </ul>
 
             <!-- 创建右侧的购物车导航条 -->
             <ul class="shop-cart">
                 <li>
                     <a href="javascript:;">
-                    <i class="fa fa-shopping-cart"></i>
-                    购物车（0）
+                        <i class="fa fa-shopping-cart"></i>
+                        购物车（0）
                     </a>
                     <div class="cart-box">
-                       <span>购物车中还没有商品，赶紧选购吧！</span>
+                        <span>购物车中还没有商品，赶紧选购吧！</span>
                     </div>
                 </li>
             </ul>
 
             <!-- 创建右侧的信息导航条 -->
             <ul class="user-info">
-                <li><a href="javascript:;">登录</a></li>
+                <li><a href="https://account.xiaomi.com/fe/service/login/password">登录</a></li>
                 <li><span>|</span></li>
-                <li><a href="javascript:;">注册</a></li>
+                <li><a href="https://cn.account.xiaomi.com/pass/register">注册</a></li>
                 <li><span>|</span></li>
                 <li><a class="info-space" class="line-space" href="javascript:;">消息通知</a></li>
             </ul>
         </div>
     </div>
+    <!-- 创建头部导航条 -->
+    <div class="header-wrapper">
+        <!-- 创建产品导航条 -->
+        <div class="nav-wrapper mcw">
+            <!-- 设置logo -->
+            <h1 class="logo">
+                <a href="https://www.mi.com/"></a>
+            </h1>
+            <!-- 设置产品导航条-->
+            <div class="pro-wrapper">
+                <ul class="pro-serve">
+                    <li class="linkst">
+                        <a href="javascript:;">全部商品分类</a>
+                        <!-- 创建左侧菜单栏 -->
+                        <ul class="list-menu">
+                            <li>
+                                <a href="https://www.mi.com/p/1915.html">
+                                    手机 电话卡
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/a/h/9819.html">电视 盒子
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/a/h/7529.html">笔记本 显示器
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/p/9285.html">家电 插线板
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/p/9289.html">出行 穿戴
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/a/h/8363.html">智能 路由器
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/p/9290.html">电源 配件
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/p/9291.html">健康 儿童
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/p/9292.html">耳机 音箱
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mi.com/buy/detail?product_id=11674">生活 箱包
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="linksty"><a href="javascript:;">小米手机</a></li>
+                    <li class="linksty"><a href="javascript:;">Redmi 红米</a></li>
+                    <li class="linksty"><a href="javascript:;">电视</a></li>
+                    <li class="linksty"><a href="javascript:;">笔记本</a></li>
+                    <li class="linksty"><a href="javascript:;">家电</a></li>
+                    <li class="linksty"><a href="javascript:;">路由器</a></li>
+                    <li class="linksty"><a href="javascript:;">智能硬件</a></li>
+                    <li class="links"><a href="javascript:;">服务</a></li>
+                    <li class="links"><a href="javascript:;">社区</a></li>
+
+                    <!-- 创建导航下拉框 -->
+                    <div class="nav-info">
+                        <div class="img-box">
+                            <ul class="nav-box clearfix">
+                                <li><img src="./img/1.webp">
+                                    <span>K40 Pro 系列</span>
+                                    <span class="colorstyle">2799元起</span>
+                                </li>
+                                <li><img src="./img/2.webp">
+                                    <span>Redmi K40</span>
+                                    <span class="colorstyle">1999元起</span>
+                                </li>
+                                <li><img src="./img/3.webp">
+                                    <span>Redmi Note 9 系列</span>
+                                    <span class="colorstyle">999元起</span>
+                                </li>
+                                <li><img src="./img/4.webp">
+                                    <span>Redmi Note 9 系列</span>
+                                    <span class="colorstyle">999元起</span>
+                                </li>
+                                <li><img src="./img/5.webp">
+                                    <span>Redmi K30S 至尊纪念版</span>
+                                    <span class="colorstyle">2599元起</span>
+                                </li>
+                                <li><img src="./img/6.webp">
+                                    <span>Redmi K30 至尊纪念版</span>
+                                    <span class="colorstyle">1999元起</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- 创建右侧的搜索框 -->
+            <div class="search-wrapper">
+                <form class="search" action="#">
+                    <input type="text" class="search-inp">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 创建中部轮播图 -->
+    <div class="banner-wrapper">
+        <div class="banner mcw">
+            <ul class="img-list">
+                <li><img src="./img/b4.webp"></li>
+                <li><img src="./img/b1.jpg"></li>
+                <li><img src="./img/b2.webp"></li>
+                <li><img src="./img/b3.webp"></li>
+            </ul>
+            <!-- 轮播图四个小点 -->
+            <div class="point">
+                <a class="active" href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+            </div>
+            <!-- 切换轮播图按钮 -->
+            <div class="prev-next">
+                <i class="fas fa-chevron-left prev"></i>
+                <i class="fas fa-chevron-right next"></i>
+            </div>
+        </div>
+    </div>
+    <!-- 创建尾部广告栏 -->
+    <div class="ads mcw">
+        <!-- 左侧快捷栏 -->
+        <div class="sixs">
+            <ul class="ad">
+                <li>
+                    <a href="https://www.mi.com/buy/seckill">
+                        <i class="fa fa-clock"></i>
+                        小米秒杀
+                    </a>
+                </li>
+                <li>
+                    <a href="https://qiye.mi.com/">
+                        <i class="fa fa-building"></i>
+                        企业团购
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/order/fcode">
+                        <i class="fa fa-motorcycle"></i>
+                        F码通道
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/mimobile">
+                        <i class="fa fa-sim-card"></i>
+                        米粉卡
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/a/h/16769.html">
+                        <i class="fa fa-spider"></i>
+                        以旧换新
+                    </a>
+                </li>
+                <li>
+                    <a href="https://account.xiaomi.com/fe/service/login/password">
+                        <i class="fa fa-mobile-alt"></i>
+                        话费充值
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 右侧广告栏 -->
+        <div class="three-img">
+            <ul class="imgs">
+                <li>
+                    <a href="https://www.mi.com/buy/detail?product_id=12511">
+                        <img src="./img/gg1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/mi11">
+                        <img src="./img/gg2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/buy/detail?product_id=12931">
+                        <img src="./img/gg3.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
