@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// 设置变量
+@pul-width:750;
+
+html{
+    // 设置rem比值
+    font-size: calc(100vw/@pul-width*40);//必须使用calc()函数才会生效
+    background-color: #eff0f4;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+// 1 rem = 1 font-size
+// 在这个设计中，font-size 大小是375/750*40 = 20px
+.w{
+    // 设置居中
+    margin: 0 auto;
+    // 设置容器宽度
+    width: (693/40rem);
+}
+
+// 设置顶部
+.top-bar:extend(.w){
+    // 设置弹性容器
+    display: flex;
+    // 设置高度
+    height: (175/40rem);
+    // 设置横向居中样式
+    justify-content: space-between;
+    // 设置纵向居中样式
+    align-items: center;
+    // background-color: rgb(12, 71, 82);
+
+    .left-menu i{
+        color: #999;
+    }
+
+    .title{
+        font-size: (50/40rem);
+        color: dodgerblue;
+    }
+
+    .right-search i{
+        color: #6b6b6b;
+    }
+}
+
+// 设置中间图片
+.img-box:extend(.w){
+    // 设置弹性容器
+    display: flex;
+    overflow: auto;
+
+    img{
+        // 设置高度
+        height: (280/40rem);
+         // 设置圆角
+        border-radius: 8px;
+        vertical-align: bottom;
+    }
+    
+    a:nth-child(2n){
+        margin: 0 10px;
+    }
+}
+
+// 设置中部菜单栏
+.center-menu:extend(.w){
+    // 设置弹性容器
+    display: flex;
+    // 设置主轴方向
+    flex-direction: column;
+    justify-content: space-evenly;
+    // 设置容器大小
+    height: (326/40rem);
+    // 设置字体大小
+    font-size: (30/40rem);
+    margin-bottom: (10/40rem);
+    // background-color: #bbd5ec;
+
+    // 设置菜单
+    .one-menu,.two-menu{
+        // 设置为弹性容器
+        display: flex;
+        // 设置居中方式
+        justify-content: space-between;
+       
+    }
+
+    .one-menu div,
+    .two-menu div{
+        // display: flex;
+        width: (328/40rem);
+        height: (104/40rem);
+        // background-color: #f97053;
+        border-radius: 10px;
+        text-align: center;
+        line-height: (104/40rem);
+    }
+
+    a{
+        display: block;
+        color: white;
+
+        i{
+            font-size: (35/40rem);
+        }
+    }
+
+    .course{
+        background-color: #f97053;
+
+        i{
+            margin-left: -10px;
+            margin-right: 15px;
+        }
+    }
+
+    .star{
+        background-color: #c657ff;
+
+        i{
+            margin-left: -10px;
+            margin-right: 10px;
+        }
+    }
+
+    .sub{
+        background-color: #ff3971;
+
+        i{
+            margin-right: 18px;
+        }
+    }
+
+    .download{
+        background-color: #1d97ff;
+
+        i{
+            margin-right: 10px;
+        }
+    }
+    
+}
+
+// 设置中部展示栏
+.live-show:extend(.w){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: (396/40rem);
+    // background-color: #c28bdd;
+
+    .title-show{
+        // 设置弹性容器
+        display: flex;
+        //左右居中
+        justify-content: space-between;
+
+        a{
+            color: black;
+        }
+
+    }
+
+    .img-list{
+        display: flex;
+        overflow: scroll;
+
+        .live-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-shrink: 0;
+            width: (328/40rem);
+            height: (325/40rem);
+            background-color: #ffffff;
+            text-align: center;
+            margin-right: (20/40rem);
+            
+            img{
+                margin-top: (24/40rem);
+                width: (286/40rem);
+                height: (156/40rem);
+                vertical-align: bottom;
+                
+            }
+        }
+
+
+        .live-info div:nth-child(2){
+            font-size: (30/40rem);
+            padding-left: (20/40rem);
+            text-align: left;
+        }
+
+
+        .live-info div:nth-child(3){
+            display: flex;align-items: center;
+            padding-left: (25/40rem);
+            text-align: left;
+            font-size: (24/40rem);
+            line-height: 37px;
+
+            img{
+                width: (50/40rem);
+                height: (50/40rem);
+                border-radius: 50%;
+                align-items: center;
+                margin: 0;
+                margin-right: (10/40rem);
+            }
+        }
+    }
+}
+
+
+// 视频展示栏
+.video-show:extend(.w){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: (396/40rem);
+    margin-top: (45/40rem);
+
+    .video-title{
+        // 设置弹性容器
+        display: flex;
+        //左右居中
+        justify-content: space-between;
+
+        a{
+            color: black;
+        }
+    }
+
+    .video-list{
+       display: flex;
+       overflow: scroll;
+
+       .video-info{
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           flex-shrink: 0;
+           width: (328/40rem);
+           height: (325/40rem);
+           background-color: #ffffff;
+           text-align: center;
+           margin-right: (20/40rem);
+           
+           video{
+               margin-top: (24/40rem);
+               width: (286/40rem);
+               height: (156/40rem);
+           }
+       }
+
+
+       .video-info div:nth-child(2){
+           font-size: (30/40rem);
+           padding-left: (20/40rem);
+           text-align: left;
+       }
+
+
+       .video-info div:nth-child(3){
+           display: flex;align-items: center;
+           padding-left: (25/40rem);
+           text-align: left;
+           font-size: (24/40rem);
+           line-height: 37px;
+
+           img{
+               width: (50/40rem);
+               height: (50/40rem);
+               border-radius: 50%;
+               align-items: center;
+               margin: 0;
+               margin-right: (10/40rem);
+           }
+       }
+    }
+}

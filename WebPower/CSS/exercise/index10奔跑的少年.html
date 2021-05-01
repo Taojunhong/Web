@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奔跑的少年</title>
+    <style>
+        .box{
+            width: 1196px;
+            height: 565px;
+            margin: 0 auto;
+            background-image: url(./Image/09/ds.jpg);
+            overflow: hidden;
+        }
+        .box1{
+            width: 256px;
+            height: 256px;
+            margin: 280px auto 0;
+            background-image: url(./Image/09/sp2.png);
+            animation: idoit .8s steps(6) 10;
+        }
+        @keyframes idoit {
+          from{
+              background-position: 0 0;
+          }
+          to{
+              background-position: -1536px 0;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .box{
+            width: 1200px;
+            height: 600px;
+            background-color: #F6F6F6;
+            perspective: 800px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .innerbox{
+            width: 250px;
+            height: 250px;
+            margin: 175px auto;
+            background-image: url(./img/qt3.jpg) ;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: .5s ease-in;
+        }
+        .box:hover .innerbox{
+            transform: translateZ(800px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="innerbox"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .box{
+            width: 1000px;
+            height: 600px;
+            background-color: silver;
+            overflow: hidden;
+            position: relative;
+        }
+        .box1,.box2{
+            width: 150px;
+            height: 250px;
+            background-color: white;
+            display: inline-block;
+            text-align: center;
+            padding-top: 100px;
+            box-sizing: border-box;
+            transition: all .3s;
+        }
+        .box1{
+            margin-left: 350px;
+            margin-top: 180px;
+            margin-right: 20px;
+        }
+        .box1:hover,
+        .box2:hover{
+            box-shadow: 0 0 5px;
+            transform: translateY(-3px);
+        }
+       
+       .box:hover .run{
+            animation: run 3s linear forwards;
+       }
+
+        .run{
+            width: 60px;
+            height: 60px;
+            background-color: dodgerblue;
+            position: absolute;
+           
+        }
+       
+        @keyframes run{
+            from{
+                left: 0;
+                top: 0;
+                
+            }
+            25%{
+                left: 940px;
+                top: 0;
+                background-color: chartreuse;
+            }
+            50%{
+                left: 940px;
+                top: 540px;
+                background-color: darkorchid;
+            }
+            75%{
+                left: 0;
+                top: 540px;
+                background-color: crimson;
+            }
+            to{
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> 
+        <div class="run"></div>
+        <div class="box1">暂停</div>
+        <div class="box2">继续</div>
+       
+    </div>
+</body>
+</html>

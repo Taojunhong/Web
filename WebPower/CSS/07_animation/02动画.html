@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .box{
+            width: 580px;
+            height: 500px;
+            background-color: darkgray;
+        }
+        .box1{
+            width: 80px;
+            height: 80px;
+            background-color: coral;
+            animation-name: box; /*动画名*/
+            animation-duration: 2s; /*动画执行时间*/
+            animation-delay: 1s; /*动画延时执行时间*/
+            animation-timing-function: cubic-bezier(.24,.95,.82,-0.88); /*时许函数*/
+            animation-iteration-count: 5; /*动画执行次数 infinite表示无限次*/
+            animation-direction: alternate; /*指定动画运行的方向 alternate表示反向*/
+            animation-fill-mode: forwards;  /*动画的填充模式  forwards表示动画结束时停在结束位置*/
+
+            
+
+            /* animation: box 2s alternate; 简写属性*/
+        }
+
+        .box:hover .box1{
+            animation-play-state: paused; /*设置动画执行的状态 paused 表示暂停*/
+        }
+
+        /*  
+            设置动画：
+                @keyframes name  关键帧接名字
+                例： @keyframes box
+
+                1、
+                animation-name:  当前元素生效的关键帧的名字
+                例： animation-name：box;
+
+                2、
+                animation-duration:  动画执行的时间
+                例： animation-duration: 2s;
+
+                3、
+                animation-delay:  动画延时执行时间
+                例： animation-delay: 2s;
+
+                4、
+                animation-timing-function:  时许函数
+                例： nimation-timing-function: cubic-bezier(.24,.95,.82,-0.88);
+
+                5、
+                animation-iteration-count:  动画执行次数
+                    可选值：
+                        infinite   表示无限次
+                        数字       表示次数
+                例： animation-iteration-count: infinite;
+
+                6、animation-direction:  指定动画运行的方向
+                    可选值：
+                        normal 默认值 从from 向to 运行 每次都是如此
+                        reverse 从to 向 from 运行 每次都是如此
+                        alternate 从from 向 to 运行 重复执行时反向执行
+                        alternate-reverse 从 to 向 from 运行 重复执行时反向执行
+                    例： animation-direction: alternate;
+
+                7、
+                animation-play-state:  设置动画执行的状态 
+                    可选值：
+                        running 默认值 动画执行
+                        paused 表示暂停
+                例： animation-play-state: paused;
+
+                8、animation-fill-mode: forwards;  动画的填充模式
+                    可选值：
+                        none 默认值
+                        forwards 表示动画结束时停在结束位置
+                        backwards 表示延时等待时的位置
+                        both 结合两者
+                例： animation-fill-mode: forwards;
+
+        */
+
+        @keyframes box{
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 500px;
+                background-color: cornflowerblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

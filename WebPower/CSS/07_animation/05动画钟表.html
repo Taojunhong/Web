@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间表盘</title>
+    <style>
+        .bp{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 50%;
+            background-image: url(./img/bp1.png);
+            background-size: cover;
+            /* border: 5px solid black; */
+            position: relative;
+        }
+        .bp > div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /* 设置秒针 */
+        .sec-wrapper{
+            width: 84%;
+            height: 84%;
+            animation: run 60s steps(60) infinite;
+        }
+        .sec{
+            width: 2px;
+            height: 50%;
+            background-color: red;
+            margin: 0 auto;
+        }
+
+         /* 设置分针 */
+        .min-wrapper{
+            width: 79%;
+            height: 79%;
+            animation: run 3600s linear infinite;
+        }
+        .min{
+            width: 4px;
+            height: 50%;
+            background-color: yellowgreen;
+            margin: 0 auto;
+        }
+
+        /* 设置时针 */
+        .hour-wrapper{
+            width: 70%;
+            height: 70%;
+            animation: run 43200s linear infinite;
+        }
+        .hour{
+            width: 6px;
+            height: 50%;
+            background-color: blue;
+            margin: 0 auto;
+        }
+
+        @keyframes run{
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="bp">
+        <div class="hour-wrapper">
+            <div class="hour"></div>
+        </div>
+        <div class="min-wrapper">
+            <div class="min"></div>
+        </div>
+        <div class="sec-wrapper">
+            <div class="sec"></div>
+        </div>
+    </div>
+</body>
+</html>
