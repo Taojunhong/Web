@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>栅格系统</title>
+    <style>
+        .container>.row{
+            text-align: center;
+            margin-top: 15px;
+            line-height: 35px;
+        }
+        .container>.row>div{
+            padding: 0 5px;
+        }
+        .red{
+            background-color: #FF4040;
+        }
+        .green{
+            background-color: #9AFF9A;
+        }
+        .yellow{
+            background-color: #CDCD00;
+        }
+        .blue{
+            background-color: #836FFF;
+        } 
+        .box{
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="row box">
+                    <div class="col-md-2 red">1</div>
+                    <div class="col-md-2 green">2</div>
+                    <div class="col-md-2 blue">3</div>
+                    <div class="col-md-2 yellow">4</div>
+                    <div class="col-md-2 green">5</div>
+                    <div class="col-md-2 red">6</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 green">two</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 yellow">three</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 blue">four</div>
+        </div>
+    </div>
+</body>
+</html>

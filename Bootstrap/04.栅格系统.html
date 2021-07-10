@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>响应式工具</title>
+    <style>
+         .container>.row{
+            text-align: center;
+            margin-top: 15px;
+            line-height: 35px;
+        }
+        .red{
+            background-color: #FF4040;
+        }
+        .green{
+            background-color: #9AFF9A;
+        }
+        .yellow{
+            background-color: #CDCD00;
+        }
+        .blue{
+            background-color: #836FFF;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 red">1</div>
+            <div class="col-md-3 yellow visible-xs">我一定会出现</div>
+            <div class="col-md-3 green">2</div>
+            <div class="col-md-3 yellow hidden-md hidden-sm hidden-xs">我会隐藏起来</div>
+            <div class="col-md-3 blue">4</div>
+        </div>
+    </div>
+</body>
+</html>
