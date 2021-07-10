@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/font-awesome.css">
+    <style>
+        @media screen and (min-width:500px) and (max-width:800px) {
+            .nav{
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            background-color: rgb(133, 96, 96);
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .left-menu ul li{
+            width: 18px;
+            height: 1.5px;
+            background-color: #fff;
+            position: absolute;
+            transform-origin: left;
+            transition: .3s;
+        }
+
+        .left-menu ul li:nth-child(1){
+            top: 0px;
+            left: 0;
+        }
+        .left-menu ul li:nth-child(2){
+            top: 7px;
+            left: 0;
+        }
+        .left-menu ul li:nth-child(3){
+            top: 14px;
+            left: 0;
+        }
+
+        .left-menu a{
+            position: relative;
+            margin-left: 25px;
+            display: block;
+            width: 19px;
+            height: 17px;
+        }
+
+        .left-menu a:active li:nth-child(1){
+            transform: rotateZ(52deg);
+        }
+        .left-menu a:active li:nth-child(2){
+            width: 0;
+        }
+        .left-menu a:active li:nth-child(3){
+            transform: rotateZ(-52deg);
+        }
+        .right-search{
+            margin-right: 25px;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <div class="nav">
+            <div class="left-menu">
+                <a href="#">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </a>
+            </div>
+            <div class="title">
+                <a href="https://www.meitu.com/">Meitu</a>
+            </div>
+            <div class="right-search">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
