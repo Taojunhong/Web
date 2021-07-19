@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#test {
+				width: 200px;
+				height: 200px;
+				background: pink;
+				/*水平垂直居中*/
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="test"></div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+
+			var testNode = document.getElementById("test")
+
+			//火狐
+			if(testNode.addEventListener) {
+				testNode.addEventListener("DOMMouseScroll", function(event) {
+					event = event || window.event
+					console.log(event.detail)
+				})
+			}
+			//非火狐浏览器
+			testNode.onmousewheel = function(event) {
+				event = event || window.event
+				console.log(event.wheelDelta)
+			}
+		}
+	</script>
+
+</html>

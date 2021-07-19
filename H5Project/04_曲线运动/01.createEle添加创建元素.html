@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加创建元素</title>
+		<style type="text/css">
+			#box{
+				float: left;				
+				width: 100px;
+				height: 100px;
+				background-color: #FF1493;
+			}
+			.createDiv{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+				margin-left: 5px;
+			}
+			#btn{
+				position: absolute;
+				top: 120px;
+				left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<button id="btn"> 添加 </button>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			
+			var btn = document.getElementById("btn")
+			var box = document.getElementById("box")
+			
+			btn.onclick = function(){
+				var div = document.createElement("div")
+				div.classList.add("createDiv")
+				document.body.appendChild(div)
+			}
+		}
+	</script>
+</html>

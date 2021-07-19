@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				background-color: #eee;
+			}
+			
+			canvas {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				background-color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="myCanvas" width="1000" height="400"></canvas>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+
+			var oc = document.getElementById("myCanvas")
+			if(oc.getContext) {
+				var ctx = oc.getContext("2d")
+
+				//创建数组 存储圆的信息数据
+				var arr = []
+
+				// 生成圆的数据信息
+				setInterval(function() {
+					var x = Math.random() * oc.width
+					var y = Math.random() * oc.height
+					var r = 10
+					var red = Math.round(Math.random()) * 255
+					var gre = Math.round(Math.random()) * 255
+					var blu = Math.round(Math.random()) * 255
+					var alp = 1
+
+					//将圆的数据信息注入到数组中
+					arr.push({
+						x: x,
+						y: y,
+						r: r,
+						red: red,
+						gre: gre,
+						blu: blu,
+						alp: alp
+					})
+				}, 1000/20)
+
+				//根据数据信息来绘制圆
+				setInterval(function() {
+					console.log(arr)
+					ctx.clearRect(0, 0, oc.width, oc.height)
+
+					//消除炸裂的气泡
+					for(var i = 0; i < arr.length; i++) {
+						
+						if(arr[i].alp<=0){
+							arr.splice(i,1);
+						}
+						
+						arr[i].r++
+						arr[i].alp-=0.01
+					}
+
+					//绘制
+					for(var i = 0; i < arr.length; i++) {
+						ctx.save()
+						ctx.fillStyle = "rgba(" + arr[i].red + "," + arr[i].gre + "," + arr[i].blu + "," + arr[i].alp + ")"
+						ctx.beginPath()
+						ctx.arc(arr[i].x, arr[i].y, arr[i].r, 0, 2 * Math.PI)
+						ctx.fill()
+						ctx.restore()
+					}
+				}, 1000/60)
+			}
+		}
+	</script>
+
+</html>

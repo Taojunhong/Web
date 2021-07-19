@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>parentNode</title>
+		<style type="text/css">
+			.inner3 {
+				position: absolute;
+			}
+			
+			.inner1 {
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="inner1">inner1
+			<div id="inner2">inner2
+				<div id="inner3">inner3</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		/*
+		 * parentNode 属性  指元素的直接父级
+		 */
+		window.onload = function() {
+			var inner3 = document.getElementById("inner3")
+			console.log(inner3.parentNode.id)
+		}
+	</script>
+
+</html>

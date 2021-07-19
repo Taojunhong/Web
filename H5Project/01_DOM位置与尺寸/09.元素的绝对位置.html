@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>元素的绝对位置</title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+			}
+			
+			#inner1 {
+				position: relative;
+				background-color: pink;
+				left: 150px;
+				top: 150px;
+			}
+			
+			#inner2 {
+				position: absolute;
+				background-color: hotpink;
+				left: 250px;
+				top: 250px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="inner1">inner1
+			<div id="inner2">inner2</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			var inner1 = document.getElementById("inner1")
+			var inner2 = document.getElementById("inner2")
+
+			var result1 = getAbPosition(inner1);
+			var result2 = getAbPosition(inner2)
+
+			console.log("inner1 的绝对位置： x:" + result1.x + " y:" + result1.y)
+			console.log("inner2 的绝对位置： x:" + result2.x + " y:" + result2.y)
+
+			function getAbPosition(node) {
+
+				var x = 0
+				var y = 0
+
+				while(node) {
+					x += node.offsetLeft
+					y += node.offsetTop
+
+					node = node.offsetParent
+				}
+
+				return {
+					x: x,
+					y: y
+				};
+			}
+		}
+	</script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>offsetLeft & offsetTop</title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+			}
+			#inner1{
+				position: relative;
+				background-color: pink;
+				left: 50px;
+				top: 40px;
+			}
+			#inner2{
+				position: fixed;
+				background-color: hotpink;
+				left: 100px;
+				top: 80px;
+			}
+			#inner3{
+				position: absolute;
+				background-color: deeppink;
+				left: 70px;
+				top: 20px;
+			}
+			#inner4{
+				/*position: fixed;*/
+				background-color: yellow;
+				left: 120px;
+				top: 190px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="inner1">inner1
+			<div id="inner2">inner2
+				<div id="inner3">inner3
+					<div id="inner4">inner4</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			/*
+			 * offsetTop	获取当前元素到 开启定位的父节点 的  top  方向的距离
+			 * offsetLeft	获取当前元素到 开启定位的父节点 的  left 方向的距离
+			 */
+			
+			console.log(inner4.offsetTop) // 20
+			console.log(inner4.offsetLeft) // 0
+			console.log(inner3.offsetTop) // 20
+			console.log(inner3.offsetLeft) // 70
+			
+		}
+	</script>
+</html>

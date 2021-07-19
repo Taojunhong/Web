@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>offsetWidth & offsetHeight</title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				padding: 10px;
+				border: 10px solid;
+			}
+			#inner1{
+				position: relative;
+				background-color: pink;
+				left: 50px;
+				top: 40px;
+			}
+			#inner2{
+				position: fixed;
+				background-color: hotpink;
+				left: 100px;
+				top: 80px;
+			}
+			#inner3{
+				position: absolute;
+				background-color: deeppink;
+				left: 70px;
+				top: 20px;
+			}
+			#inner4{
+				/*position: fixed;*/
+				background-color: yellow;
+				left: 120px;
+				top: 190px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="inner1">inner1
+			<div id="inner2">inner2
+				<div id="inner3">inner3
+					<div id="inner4">inner4</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			/*
+			 * offsetWidth	水平方向  width  + 左右padding + 左右border-width
+			 * offsetHeight	垂直方向  height + 上下padding + 上下border-width
+			 */
+			
+			console.log(inner4.offsetWidth) // 240
+			console.log(inner4.offsetHeight) // 240
+			console.log(inner3.offsetWidth) // 240
+			console.log(inner3.offsetHeight) // 240
+			
+		}
+	</script>
+</html>

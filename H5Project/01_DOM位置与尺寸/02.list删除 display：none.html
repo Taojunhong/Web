@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>list删除displa：none</title>
+		<style type="text/css">
+			#all {
+				margin-left: 30px;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h3> 请任意删除： </h3>
+		<ul>
+			<li>语文
+				<a href="#" id="all"> 删除 </a>
+			</li>
+			<li>数学
+				<a href="#" id="all"> 删除 </a>
+			</li>
+			<li>英语
+				<a href="#" id="all"> 删除 </a>
+			</li>
+			<li>物理
+				<a href="#" id="all"> 删除 </a>
+			</li>
+			<li>化学
+				<a href="#" id="all"> 删除 </a>
+			</li>
+			<li>生物
+				<a href="#" id="all"> 删除 </a>
+			</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			var delArr = document.getElementsByTagName("a")
+			for(var i = 0; i < delArr.length; i++) {
+				delArr[i].onclick = function() {
+					//采用闭包的思想
+					this.parentNode.style.display = "none"
+				}
+			}
+		}
+	</script>
+
+</html>

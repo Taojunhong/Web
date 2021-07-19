@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>停靠栏滚轮特效</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#wrap {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+		<body>
+			<div id="wrap">
+				<img src="img/1Browser.jpg" />
+				<img src="img/2Listen.jpg" />
+				<img src="img/3Economy.jpg" />
+				<img src="img/4Picture.jpg" />
+				<img src="img/5West.jpg" />
+			</div>
+		</body>
+		<script type="text/javascript">
+			window.onload = function() {
+				var r = 400
+				var imgArr = document.getElementsByTagName("img")
+
+				document.onmousemove = function(event) {
+					event = event || window.event
+					for(var i = 0; i < imgArr.length; i++) {
+						var a = imgArr[i].getBoundingClientRect().left + imgArr[i].offsetWidth / 2 - event.clientX
+						var b = imgArr[i].getBoundingClientRect().top + imgArr[i].offsetHeight / 2 - event.clientY
+						var c = Math.sqrt(a * a + b * b)
+
+						if(c >= r) {
+							c = r
+						}
+
+						imgArr[i].style.width = 128 - c * 0.16 + "px"
+					}
+				}
+
+			}
+		</script>
+
+</html>

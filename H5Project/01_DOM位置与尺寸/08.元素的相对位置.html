@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>滚动条滚动的距离</title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+			}
+			
+			#inner1 {
+				position: relative;
+				background-color: pink;
+				left: 150px;
+				top: 150px;
+			}
+			
+			#inner2 {
+				position: absolute;
+				background-color: hotpink;
+				left: 200px;
+				top: 200px;
+			}
+		</style>
+	</head>
+
+	<body style="height: 2000px;width: 2000px;">
+		<div id="inner1">inner1
+			<div id="inner2">inner2</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+
+			var result1 = getRePosition(inner1);
+			var result2 = getRePosition(inner2)
+
+			console.log("inner1 的相对位置： x:" + result1.x + " y:" + result1.y)
+			console.log("inner2 的相对位置： x:" + result2.x + " y:" + result2.y)
+
+			//获取元素的相对位置
+			function getRePosition(node) {
+
+				var x = 0
+				var y = 0
+
+				//获取滚动条滚动的距离
+				var scL = document.documentElement.scrollLeft || document.body.scrollLeft
+				var scT = document.documentElement.scrollTop || document.body.scrollTop
+
+				while(node) {
+					x += node.offsetLeft
+					y += node.offsetTop
+
+					node = node.offsetParent
+				}
+
+				return {
+					x: x - scL,
+					y: y - scT
+				};
+			}
+		}
+	</script>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>滚动条滚动的距离</title>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+			}
+			
+			#inner1 {
+				position: relative;
+				background-color: pink;
+				left: 150px;
+				top: 150px;
+			}
+			
+			#inner2 {
+				position: absolute;
+				background-color: hotpink;
+				left: 200px;
+				top: 200px;
+			}
+		</style>
+	</head>
+
+	<body style="height: 2000px;width: 2000px;">
+		<div id="inner1">inner1
+			<div id="inner2">inner2</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+
+			//获取滚动条滚动的距离
+			var scL = document.documentElement.scrollLeft || document.body.scrollLeft
+			var scT = document.documentElement.scrollTop || document.body.scrollTop
+
+			console.log(scL)
+			console.log(scT)
+		}
+	</script>
+
+</html>

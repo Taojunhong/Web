@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>canvas动画</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				background-color: #eee;
+			}
+			
+			canvas {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				background-color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="myCanvas" width="1000" height="400"></canvas>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			var oc = document.getElementById("myCanvas")
+			if(oc.getContext){
+				var ctx = oc.getContext("2d")
+				var flag = 0
+				setInterval(function(){
+					ctx.clearRect(0,0,oc.width,oc.height)
+					
+					flag++
+					ctx.save()
+					ctx.beginPath()
+					ctx.strokeRect(flag,flag,100,100)
+					ctx.restore()
+				},1000/60)
+			}
+		}
+	</script>
+
+</html>
